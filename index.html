@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UMC Costa Rica — Soluciones Tecnológicas</title>
+  <meta name="description" content="UMC Costa Rica ofrece soluciones tecnológicas de vanguardia para empresas y personas." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300c6ff'/><text y='.9em' font-size='70' font-family='Arial' font-weight='900' fill='white'>U</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===== Particle background ===== -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- ===== Navigation ===== -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">UMC</div>
+    <div>
+      <span>UMC</span>
+      <small>Costa Rica</small>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="servicios.html">Servicios</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+
+  <a href="contacto.html" class="btn btn-primary nav-cta">Agendar cita</a>
+
+  <button class="hamburger" id="hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="servicios.html">Servicios</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="contacto.html" class="btn btn-primary" style="margin-top:1rem">Agendar cita</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <!-- Left -->
+    <div class="hero-text">
+      <div class="hero-tag">
+        <span class="dot"></span>
+        Innovación · Tecnología · Resultados
+      </div>
+
+      <h1>
+        Soluciones que<br/>
+        <span class="gradient-text">impulsan</span> tu negocio
+      </h1>
+
+      <p>
+        En UMC Costa Rica transformamos tu visión en realidad con tecnología de punta,
+        atención personalizada y resultados que marcan la diferencia.
+      </p>
+
+      <div class="hero-actions">
+        <a href="contacto.html" class="btn btn-primary">
+          📅 Agendar una cita
+        </a>
+        <a href="servicios.html" class="btn btn-outline">
+          Ver servicios →
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <h3>+150</h3>
+          <p>Clientes satisfechos</p>
+        </div>
+        <div class="hero-stat">
+          <h3>+8</h3>
+          <p>Años de experiencia</p>
+        </div>
+        <div class="hero-stat">
+          <h3>100%</h3>
+          <p>Compromiso</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Visual orb -->
+    <div class="hero-visual">
+      <div class="hero-orb-wrap">
+        <div class="hero-orb"></div>
+        <div class="hero-orb-ring"></div>
+        <div class="hero-orb-ring2"></div>
+        <span class="orbit-dot"></span>
+        <span class="orbit-dot"></span>
+        <span class="orbit-dot"></span>
+        <div class="hero-center-icon">
+          <div class="icon-circle">⚡</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Features strip ===== -->
+<section class="section" style="padding-top: 2rem; padding-bottom: 5rem;">
+  <div class="features-strip">
+    <div class="feature-card fade-in">
+      <span class="feature-icon">🚀</span>
+      <h3>Alta Tecnología</h3>
+      <p>Soluciones modernas y escalables adaptadas a las necesidades de tu empresa.</p>
+    </div>
+    <div class="feature-card fade-in" style="transition-delay:.1s">
+      <span class="feature-icon">🛡️</span>
+      <h3>Confianza Total</h3>
+      <p>Más de 8 años respaldando a empresas y profesionales en Costa Rica.</p>
+    </div>
+    <div class="feature-card fade-in" style="transition-delay:.2s">
+      <span class="feature-icon">🤝</span>
+      <h3>Atención Personalizada</h3>
+      <p>Cada cliente recibe un trato único con seguimiento dedicado en cada paso.</p>
+    </div>
+    <div class="feature-card fade-in" style="transition-delay:.3s">
+      <span class="feature-icon">⚡</span>
+      <h3>Resultados Rápidos</h3>
+      <p>Procesos ágiles que garantizan entregas en el tiempo pactado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA Banner ===== -->
+<section class="section" style="padding-top: 2rem;">
+  <div class="cta-banner fade-in">
+    <div class="section-label">¿Listo para empezar?</div>
+    <h2>Transformemos tu negocio <span class="gradient-text">juntos</span></h2>
+    <p>
+      Agenda una consulta gratuita y descubre cómo UMC Costa Rica puede
+      llevar tu empresa al siguiente nivel.
+    </p>
+    <a href="contacto.html" class="btn btn-primary" style="font-size:1rem; padding:.9rem 2.5rem;">
+      📅 Agendar cita gratuita
+    </a>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="glow-divider" style="margin-bottom:2rem"></div>
+  <div class="footer-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">UMC</div>
+      <div>
+        <span>UMC</span>
+        <small>Costa Rica</small>
+      </div>
+    </a>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <p class="footer-copy">
+      © 2025 <span>UMC Costa Rica</span>. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
+
+<!-- WhatsApp float -->
+<a href="https://wa.me/50600000000" target="_blank" class="wa-float" title="Escríbenos por WhatsApp" aria-label="WhatsApp">
+  💬
+</a>
+
+<script src="js/modules/nav.js"></script>
+<script src="js/modules/particles.js"></script>
+<script src="js/modules/animations.js"></script>
+<script src="js/modules/form.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

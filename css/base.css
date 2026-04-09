@@ -1,0 +1,86 @@
+/* ============================================================
+   base.css — Variables, reset, tipografía, botones
+   ============================================================ */
+
+/* ---------- Variables ---------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-dark:    #080c14;
+  --bg-card:    #0d1627;
+  --bg-glass:   rgba(13, 22, 39, 0.75);
+  --accent:     #00c6ff;
+  --accent2:    #7b2ff7;
+  --accent-grd: linear-gradient(135deg, #00c6ff 0%, #7b2ff7 100%);
+  --text:       #e8eaf2;
+  --text-muted: #8892a4;
+  --border:     rgba(0, 198, 255, 0.15);
+  --radius:     14px;
+  --transition: 0.35s cubic-bezier(.4,0,.2,1);
+  --nav-h:      72px;
+}
+
+/* ---------- Base ---------- */
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-dark); }
+::-webkit-scrollbar-thumb { background: var(--accent2); border-radius: 3px; }
+
+/* ---------- Tipografía ---------- */
+h1, h2, h3 { font-weight: 700; line-height: 1.2; }
+h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
+h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
+h3 { font-size: 1.25rem; }
+
+.gradient-text {
+  background: var(--accent-grd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---------- Botones ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .8rem 2rem;
+  border-radius: 50px;
+  font-size: .95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--accent-grd);
+  color: #fff;
+  box-shadow: 0 0 24px rgba(0,198,255,.35);
+}
+.btn-primary:hover {
+  box-shadow: 0 0 40px rgba(0,198,255,.6);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+}
+.btn-outline:hover {
+  background: rgba(0,198,255,.1);
+  box-shadow: 0 0 20px rgba(0,198,255,.25);
+  transform: translateY(-2px);
+}

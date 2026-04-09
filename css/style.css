@@ -1,0 +1,7 @@
+/* ============================================================
+   style.css — Punto de entrada CSS
+   ============================================================ */
+
+@import 'base.css';       /* Variables, reset, tipografía, botones  */
+@import 'layout.css';     /* Nav, secciones, footer, responsive      */
+@import 'components.css'; /* Cards, formulario, hero, animaciones    */

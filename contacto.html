@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — UMC Costa Rica</title>
+  <meta name="description" content="Contáctanos por WhatsApp, correo o formulario. Estamos listos para ayudarte." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300c6ff'/><text y='.9em' font-size='70' font-family='Arial' font-weight='900' fill='white'>U</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<canvas id="particles-canvas"></canvas>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">UMC</div>
+    <div>
+      <span>UMC</span>
+      <small>Costa Rica</small>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="servicios.html">Servicios</a></li>
+    <li><a href="contacto.html" class="active">Contacto</a></li>
+  </ul>
+
+  <a href="contacto.html" class="btn btn-primary nav-cta">Agendar cita</a>
+
+  <button class="hamburger" id="hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="servicios.html">Servicios</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="contacto.html" class="btn btn-primary" style="margin-top:1rem">Agendar cita</a>
+</div>
+
+<section class="section contact-hero">
+  <div class="contact-hero-inner">
+    <div class="section-label fade-in">Estamos aquí</div>
+    <h1 class="fade-in" style="transition-delay:.1s">
+      Hablemos de tu <span class="gradient-text">proyecto</span>
+    </h1>
+    <p class="fade-in" style="color:var(--text-muted); font-size:1.05rem; margin-top:1rem; transition-delay:.2s">
+      Elige el canal que prefieras o completa el formulario y te contactaremos
+      a la brevedad posible.
+    </p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:1rem; padding-bottom:6rem;">
+  <div class="contact-grid">
+
+    <div class="contact-info">
+
+      <a href="https://wa.me/50600000000?text=Hola%20UMC%20Costa%20Rica%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta."
+         target="_blank" class="contact-card fade-in">
+        <div class="contact-card-icon">💬</div>
+        <div class="contact-card-body">
+          <h3>WhatsApp</h3>
+          <p>Respuesta inmediata en horario hábil.</p>
+          <span>+506 0000-0000</span>
+        </div>
+      </a>
+
+      <a href="mailto:info@umccostarica.com?subject=Consulta%20desde%20la%20web"
+         class="contact-card fade-in" style="transition-delay:.1s">
+        <div class="contact-card-icon">📧</div>
+        <div class="contact-card-body">
+          <h3>Correo Electrónico</h3>
+          <p>Te respondemos dentro de 24 horas hábiles.</p>
+          <span>info@umccostarica.com</span>
+        </div>
+      </a>
+
+      <div class="contact-card fade-in" style="transition-delay:.2s; cursor:default;">
+        <div class="contact-card-icon">📍</div>
+        <div class="contact-card-body">
+          <h3>Ubicación</h3>
+          <p>Atendemos presencial y de forma remota.</p>
+          <span>Costa Rica</span>
+        </div>
+      </div>
+
+      <div class="contact-card fade-in" style="transition-delay:.3s; cursor:default;">
+        <div class="contact-card-icon">🕐</div>
+        <div class="contact-card-body">
+          <h3>Horario de Atención</h3>
+          <p>Lunes a Viernes</p>
+          <span>8:00 am — 6:00 pm</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="contact-form-wrap fade-in" style="transition-delay:.1s">
+      <p class="form-title">📅 Agenda una cita o escríbenos</p>
+
+      <form id="contact-form" novalidate>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono / WhatsApp</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+506 0000-0000" />
+        </div>
+
+        <div class="form-group">
+          <label for="servicio">Servicio de interés</label>
+          <select id="servicio" name="servicio" required>
+            <option value="" disabled selected>Selecciona un servicio…</option>
+            <option>Soporte Técnico</option>
+            <option>Outsourcing IT</option>
+            <option>Soluciones Modernas</option>
+            <option>Otro / No estoy seguro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4"
+            placeholder="Cuéntanos brevemente sobre tu proyecto o consulta…" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit">
+          Enviar mensaje →
+        </button>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" style="padding-top:0; padding-bottom:5rem;">
+  <div style="text-align:center; margin-bottom:2.5rem;">
+    <div class="section-label fade-in">Contacto rápido</div>
+    <h2 class="fade-in" style="transition-delay:.1s; margin-top:.5rem;">
+      Elige tu canal <span class="gradient-text">preferido</span>
+    </h2>
+  </div>
+  <div style="display:flex; justify-content:center; gap:1.5rem; flex-wrap:wrap;">
+    <a href="https://wa.me/50600000000?text=Hola%20UMC%20Costa%20Rica%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta."
+       target="_blank" class="btn btn-primary fade-in" style="gap:.6rem; padding:1rem 2.2rem;">
+      💬 Escribir por WhatsApp
+    </a>
+    <a href="mailto:info@umccostarica.com?subject=Consulta%20desde%20la%20web"
+       class="btn btn-outline fade-in" style="transition-delay:.1s; gap:.6rem; padding:1rem 2.2rem;">
+      📧 Enviar un correo
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="glow-divider" style="margin-bottom:2rem"></div>
+  <div class="footer-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">UMC</div>
+      <div>
+        <span>UMC</span>
+        <small>Costa Rica</small>
+      </div>
+    </a>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <p class="footer-copy">
+      © 2025 <span>UMC Costa Rica</span>. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
+
+<a href="https://wa.me/50600000000" target="_blank" class="wa-float" title="Escríbenos por WhatsApp" aria-label="WhatsApp">
+  💬
+</a>
+
+<script src="js/modules/nav.js"></script>
+<script src="js/modules/particles.js"></script>
+<script src="js/modules/animations.js"></script>
+<script src="js/modules/form.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
