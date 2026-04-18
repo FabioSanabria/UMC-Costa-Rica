@@ -853,15 +853,131 @@
   transform: translateX(-2px);
 }
 
-/* ---------- Responsive: páginas nuevas ---------- */
+/* ---------- WhatsApp CTA banner (Contacto) ---------- */
+.wa-cta-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(37,211,102,.12), rgba(37,211,102,.06));
+  border: 1px solid rgba(37,211,102,.3);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+.wa-cta-banner:hover {
+  border-color: rgba(37,211,102,.6);
+  transform: translateY(-3px);
+}
+
+.wa-cta-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.wa-cta-icon {
+  width: 52px; height: 52px; min-width: 52px;
+  background: #25d366;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(37,211,102,.4);
+}
+
+.wa-cta-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: .25rem;
+}
+
+.wa-cta-sub {
+  color: var(--text-muted);
+  font-size: .9rem;
+}
+
+.wa-cta-btn {
+  background: #25d366;
+  color: #fff;
+  font-size: .85rem;
+  font-weight: 700;
+  padding: .6rem 1.4rem;
+  border-radius: 50px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Stack on mobile */
+@media (max-width: 600px) {
+  .wa-cta-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+  .wa-cta-btn { align-self: stretch; text-align: center; }
+}
+
+/* ============================================================
+   Responsive — all overrides here, AFTER regular declarations,
+   so cascade works correctly regardless of @import order.
+   ============================================================ */
+
+/* ---- Tablets / large phones (≤900px) ---- */
 @media (max-width: 900px) {
+
+  /* Hero: remove 100vh min-height, go single column, centre */
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--nav-h) + 3rem);
+    padding-bottom: 4rem;
+    overflow-x: hidden;
+  }
+  .hero-inner   { grid-template-columns: 1fr; text-align: center; }
+  .hero p,
+  .hero h1      { margin-left: auto; margin-right: auto; }
+  .hero-actions { justify-content: center; }
+  .hero-stats   { justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+  .hero-visual  { display: none !important; }
+
+  /* Collapse all explicit 2-col / 3-col grids */
+  .contact-grid { grid-template-columns: 1fr; }
   .about-grid   { grid-template-columns: 1fr; }
   .mv-grid      { grid-template-columns: 1fr; }
   .tiers-grid   { grid-template-columns: 1fr; }
   .detail-grid  { grid-template-columns: 1fr; }
+
+  /* Reduce heavy padding blocks */
+  .cta-banner        { padding: 2.5rem 2rem; }
+  .contact-form-wrap { padding: 2rem; }
+  .team-banner       { padding: 2rem 1.5rem; }
 }
 
+/* ---- Small phones (≤700px) ---- */
 @media (max-width: 700px) {
-  .tiers-grid { grid-template-columns: 1fr; }
+  .form-row      { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
+}
+
+/* ---- Very small phones (≤480px) ---- */
+@media (max-width: 480px) {
+  /* Stack hero buttons full-width */
+  .hero-actions      { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { justify-content: center; }
+
+  /* Process steps single column */
+  .process-grid { grid-template-columns: 1fr; }
+
+  /* Reduce padding further */
+  .cta-banner        { padding: 2rem 1.25rem; }
+  .contact-form-wrap { padding: 1.5rem 1rem; }
 }
 
