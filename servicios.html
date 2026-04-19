@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Servicios — UMC Costa Rica</title>
-  <meta name="description" content="Conoce todos los servicios que UMC Costa Rica ofrece para tu empresa." />
+  <meta name="description" content="Outsourcing IT, soporte técnico y soluciones tecnológicas para empresas en Costa Rica." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300c6ff'/><text y='.9em' font-size='70' font-family='Arial' font-weight='900' fill='white'>U</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -27,10 +28,11 @@
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="servicios.html" class="active">Servicios</a></li>
+    <li><a href="nosotros.html">Nosotros</a></li>
     <li><a href="contacto.html">Contacto</a></li>
   </ul>
 
-  <a href="contacto.html" class="btn btn-primary nav-cta">Agendar cita</a>
+  <a href="contacto.html" class="btn btn-primary nav-cta">Diagnóstico gratis</a>
 
   <button class="hamburger" id="hamburger" aria-label="Menú">
     <span></span><span></span><span></span>
@@ -40,10 +42,12 @@
 <div class="mobile-menu" id="mobile-menu">
   <a href="index.html">Home</a>
   <a href="servicios.html">Servicios</a>
+  <a href="nosotros.html">Nosotros</a>
   <a href="contacto.html">Contacto</a>
-  <a href="contacto.html" class="btn btn-primary" style="margin-top:1rem">Agendar cita</a>
+  <a href="contacto.html" class="btn btn-primary" style="margin-top:1rem">Diagnóstico gratis</a>
 </div>
 
+<!-- ===== Hero ===== -->
 <section class="section services-hero">
   <div class="services-hero-inner">
     <div class="section-label fade-in">Lo que hacemos</div>
@@ -51,69 +55,63 @@
       Nuestros <span class="gradient-text">Servicios</span>
     </h1>
     <p class="fade-in" style="color:var(--text-muted); font-size:1.1rem; margin:1rem auto 0; max-width:520px; transition-delay:.2s">
-      Ofrecemos soluciones integrales diseñadas para potenciar el crecimiento
-      y la eficiencia de tu empresa en el entorno digital actual.
+      Soluciones tecnológicas integrales para que tu empresa opere con eficiencia,
+      seguridad y tecnología actualizada.
     </p>
   </div>
 </section>
 
+<!-- ===== Cards de servicios ===== -->
 <section class="section" style="padding-top: 1rem;">
   <div class="services-grid">
 
+    <!-- Outsourcing IT -->
     <article class="service-card fade-in">
       <div class="service-num">01</div>
-      <span class="service-emoji">🛠️</span>
-      <h3>Soporte Técnico</h3>
-      <p>
-        Brindamos atención técnica ágil y confiable para mantener tu infraestructura
-        operando sin interrupciones. Desde diagnóstico hasta resolución, estamos contigo
-        en cada paso con personal especializado.
-      </p>
-      <div class="service-tags">
-        <span class="tag">Hardware</span>
-        <span class="tag">Software</span>
-        <span class="tag">Redes</span>
-        <span class="tag">Atención Remota</span>
-      </div>
-    </article>
-
-    <article class="service-card fade-in" style="transition-delay:.1s">
-      <div class="service-num">02</div>
       <span class="service-emoji">🤝</span>
       <h3>Outsourcing IT</h3>
       <p>
-        Externalizamos la gestión tecnológica de tu empresa para que puedas enfocarte
-        en tu negocio principal. Proveemos personal calificado, administración de sistemas
-        y soporte continuo bajo un esquema flexible y escalable.
+        Nos encargamos de toda la tecnología de tu empresa para que puedas
+        enfocarte en tu negocio.
       </p>
-      <div class="service-tags">
-        <span class="tag">Gestión IT</span>
-        <span class="tag">Personal Especializado</span>
-        <span class="tag">Administración de Sistemas</span>
-      </div>
+      <a href="outsourcing-it.html" class="btn btn-outline" style="width:100%; justify-content:center; margin-top:1.5rem;">
+        Conocer más →
+      </a>
     </article>
 
+    <!-- Soporte Técnico -->
+    <article class="service-card fade-in" style="transition-delay:.1s">
+      <div class="service-num">02</div>
+      <span class="service-emoji">🛠️</span>
+      <h3>Soporte Técnico</h3>
+      <p>
+        Solucionamos problemas tecnológicos de forma rápida y eficiente,
+        minimizando el tiempo de inactividad de tu empresa.
+      </p>
+      <a href="soporte-tecnico.html" class="btn btn-outline" style="width:100%; justify-content:center; margin-top:1.5rem;">
+        Conocer más →
+      </a>
+    </article>
+
+    <!-- Soluciones Tecnológicas -->
     <article class="service-card fade-in" style="transition-delay:.2s">
       <div class="service-num">03</div>
       <span class="service-emoji">🚀</span>
-      <h3>Soluciones Modernas</h3>
+      <h3>Soluciones Tecnológicas</h3>
       <p>
-        Implementamos tecnologías de vanguardia adaptadas a las necesidades reales de
-        tu empresa: desde equipos de cómputo y redes hasta plataformas digitales que
-        impulsan la productividad y la transformación del negocio.
+        Te ayudamos a implementar la tecnología adecuada para hacer crecer
+        y modernizar tu empresa.
       </p>
-      <div class="service-tags">
-        <span class="tag">Equipos de Cómputo</span>
-        <span class="tag">Redes</span>
-        <span class="tag">Transformación Digital</span>
-        <span class="tag">Nube</span>
-      </div>
+      <a href="soluciones-tecnologicas.html" class="btn btn-outline" style="width:100%; justify-content:center; margin-top:1.5rem;">
+        Conocer más →
+      </a>
     </article>
 
   </div>
 </section>
 
-<section class="section">
+<!-- ===== Proceso ===== -->
+<section class="section" style="padding-top: 2rem;">
   <div style="text-align:center; margin-bottom:3.5rem;">
     <div class="section-label fade-in">¿Cómo trabajamos?</div>
     <h2 class="fade-in" style="transition-delay:.1s">
@@ -130,63 +128,60 @@
     <div class="process-step fade-in" style="transition-delay:.1s">
       <div class="process-number">2</div>
       <h3>Diagnóstico</h3>
-      <p>Analizamos tu situación actual y definimos el alcance de la solución ideal.</p>
+      <p>Analizamos tu situación tecnológica actual y detectamos áreas de mejora.</p>
     </div>
     <div class="process-step fade-in" style="transition-delay:.2s">
       <div class="process-number">3</div>
       <h3>Propuesta</h3>
-      <p>Presentamos un plan detallado con tiempos, costos y resultados esperados.</p>
+      <p>Presentamos un plan claro con soluciones, tiempos y costos.</p>
     </div>
     <div class="process-step fade-in" style="transition-delay:.3s">
       <div class="process-number">4</div>
-      <h3>Ejecución</h3>
-      <p>Implementamos la solución con metodologías ágiles y comunicación constante.</p>
+      <h3>Implementación</h3>
+      <p>Ejecutamos la solución con comunicación constante y seguimiento.</p>
     </div>
     <div class="process-step fade-in" style="transition-delay:.4s">
       <div class="process-number">5</div>
-      <h3>Soporte</h3>
-      <p>Brindamos seguimiento post-entrega para garantizar el éxito a largo plazo.</p>
+      <h3>Soporte Continuo</h3>
+      <p>Te acompañamos después de la entrega para garantizar el éxito.</p>
     </div>
   </div>
 </section>
 
-<section class="section" style="padding-top: 1rem; padding-bottom: 6rem;">
+<!-- ===== ¿No sabes cuál necesitas? ===== -->
+<section class="section" style="padding-top: 2rem; padding-bottom: 2rem;">
   <div class="cta-banner fade-in">
-    <div class="section-label">Hablemos</div>
-    <h2>¿Necesitas un servicio <span class="gradient-text">a medida</span>?</h2>
+    <div class="section-label">¿Tienes dudas?</div>
+    <h2>¿No sabes cuál <span class="gradient-text">necesitas</span>?</h2>
     <p>
-      Cuéntanos tu proyecto y te ayudamos a encontrar la mejor solución tecnológica para tu empresa.
+      Agenda un diagnóstico gratuito y te recomendamos la mejor
+      solución para tu empresa.
     </p>
     <a href="contacto.html" class="btn btn-primary" style="font-size:1rem; padding:.9rem 2.5rem;">
-      📅 Agendar consulta gratuita
+      🔍 Agendar diagnóstico
     </a>
   </div>
 </section>
 
+<!-- ===== Footer ===== -->
 <footer>
   <div class="glow-divider" style="margin-bottom:2rem"></div>
   <div class="footer-inner">
     <a href="index.html" class="nav-logo">
       <div class="nav-logo-icon">UMC</div>
-      <div>
-        <span>UMC</span>
-        <small>Costa Rica</small>
-      </div>
+      <div><span>UMC</span><small>Costa Rica</small></div>
     </a>
     <ul class="footer-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
-    <p class="footer-copy">
-      © 2025 <span>UMC Costa Rica</span>. Todos los derechos reservados.
-    </p>
+    <p class="footer-copy">© 2025 <span>UMC Costa Rica</span>. Todos los derechos reservados.</p>
   </div>
 </footer>
 
-<a href="https://wa.me/50600000000" target="_blank" class="wa-float" title="Escríbenos por WhatsApp" aria-label="WhatsApp">
-  💬
-</a>
+<a href="https://wa.me/50670277763?text=Hola%20UMC%2C%20me%20gustar%C3%ADa%20solicitar%20un%20diagn%C3%B3stico%20gratuito." target="_blank" class="wa-float" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
 <script src="js/modules/nav.js"></script>
 <script src="js/modules/particles.js"></script>

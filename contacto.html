@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacto — UMC Costa Rica</title>
-  <meta name="description" content="Contáctanos por WhatsApp, correo o formulario. Estamos listos para ayudarte." />
+  <meta name="description" content="Contáctanos por WhatsApp, correo o formulario. Tel: +506 7027-7763" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300c6ff'/><text y='.9em' font-size='70' font-family='Arial' font-weight='900' fill='white'>U</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -27,10 +28,11 @@
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="servicios.html">Servicios</a></li>
+    <li><a href="nosotros.html">Nosotros</a></li>
     <li><a href="contacto.html" class="active">Contacto</a></li>
   </ul>
 
-  <a href="contacto.html" class="btn btn-primary nav-cta">Agendar cita</a>
+  <a href="contacto.html" class="btn btn-primary nav-cta">Diagnóstico gratis</a>
 
   <button class="hamburger" id="hamburger" aria-label="Menú">
     <span></span><span></span><span></span>
@@ -40,70 +42,115 @@
 <div class="mobile-menu" id="mobile-menu">
   <a href="index.html">Home</a>
   <a href="servicios.html">Servicios</a>
+  <a href="nosotros.html">Nosotros</a>
   <a href="contacto.html">Contacto</a>
-  <a href="contacto.html" class="btn btn-primary" style="margin-top:1rem">Agendar cita</a>
+  <a href="contacto.html" class="btn btn-primary" style="margin-top:1rem">Diagnóstico gratis</a>
 </div>
 
+<!-- ===== Hero ===== -->
 <section class="section contact-hero">
   <div class="contact-hero-inner">
     <div class="section-label fade-in">Estamos aquí</div>
     <h1 class="fade-in" style="transition-delay:.1s">
-      Hablemos de tu <span class="gradient-text">proyecto</span>
+      Hablemos sobre <span class="gradient-text">tu empresa</span>
     </h1>
     <p class="fade-in" style="color:var(--text-muted); font-size:1.05rem; margin-top:1rem; transition-delay:.2s">
-      Elige el canal que prefieras o completa el formulario y te contactaremos
-      a la brevedad posible.
+      Elige el canal que prefieras o completa el formulario.
+      Te contactamos en menos de 24 horas.
     </p>
   </div>
 </section>
 
-<section class="section" style="padding-top:1rem; padding-bottom:6rem;">
+<!-- ===== WhatsApp CTA destacado ===== -->
+<section class="section" style="padding-top:0; padding-bottom:2rem;">
+  <a href="https://wa.me/50670277763?text=Hola%20UMC%2C%20necesito%20ayuda%20con%20mi%20empresa."
+     target="_blank" class="wa-cta-banner">
+    <div class="wa-cta-left">
+      <div class="wa-cta-icon"><i class="fa-brands fa-whatsapp"></i></div>
+      <div>
+        <p class="wa-cta-title">¿Necesitas ayuda inmediata?</p>
+        <p class="wa-cta-sub">Escríbenos por WhatsApp y te respondemos rápidamente.</p>
+      </div>
+    </div>
+    <span class="wa-cta-btn">Escribir ahora →</span>
+  </a>
+</section>
+
+<!-- ===== Grid principal ===== -->
+<section class="section" style="padding-top:1rem; padding-bottom:4rem;">
   <div class="contact-grid">
 
+    <!-- Columna izquierda: info -->
     <div class="contact-info">
 
-      <a href="https://wa.me/50600000000?text=Hola%20UMC%20Costa%20Rica%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta."
+      <a href="https://wa.me/50670277763?text=Hola%20UMC%2C%20necesito%20ayuda%20con%20mi%20empresa."
          target="_blank" class="contact-card fade-in">
-        <div class="contact-card-icon">💬</div>
+        <div class="contact-card-icon" style="background:#25d366; box-shadow:0 0 16px rgba(37,211,102,.35);">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
         <div class="contact-card-body">
           <h3>WhatsApp</h3>
-          <p>Respuesta inmediata en horario hábil.</p>
-          <span>+506 0000-0000</span>
+          <p>Respuesta rápida en horario hábil.</p>
+          <span>+506 7027-7763</span>
         </div>
       </a>
 
-      <a href="mailto:info@umccostarica.com?subject=Consulta%20desde%20la%20web"
+      <a href="tel:+50622830817" class="contact-card fade-in" style="transition-delay:.05s">
+        <div class="contact-card-icon">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="contact-card-body">
+          <h3>Teléfono Oficina</h3>
+          <p>Llámanos directamente a la oficina.</p>
+          <span>+506 2283-0817</span>
+        </div>
+      </a>
+
+      <a href="mailto:info@umccr.com?subject=Consulta%20desde%20la%20web"
          class="contact-card fade-in" style="transition-delay:.1s">
-        <div class="contact-card-icon">📧</div>
+        <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
         <div class="contact-card-body">
           <h3>Correo Electrónico</h3>
-          <p>Te respondemos dentro de 24 horas hábiles.</p>
-          <span>info@umccostarica.com</span>
+          <p>Te respondemos en menos de 24 horas.</p>
+          <span>info@umccr.com</span>
         </div>
       </a>
 
-      <div class="contact-card fade-in" style="transition-delay:.2s; cursor:default;">
-        <div class="contact-card-icon">📍</div>
+      <a href="https://maps.app.goo.gl/FB2eQgQFogxZWuhs9"
+         target="_blank" class="contact-card fade-in" style="transition-delay:.2s">
+        <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
         <div class="contact-card-body">
           <h3>Ubicación</h3>
-          <p>Atendemos presencial y de forma remota.</p>
-          <span>Costa Rica</span>
+          <p>San José, Costa Rica</p>
+          <span>Ver en Google Maps →</span>
         </div>
-      </div>
+      </a>
 
       <div class="contact-card fade-in" style="transition-delay:.3s; cursor:default;">
-        <div class="contact-card-icon">🕐</div>
+        <div class="contact-card-icon"><i class="fa-solid fa-clock"></i></div>
         <div class="contact-card-body">
           <h3>Horario de Atención</h3>
           <p>Lunes a Viernes</p>
-          <span>8:00 am — 6:00 pm</span>
+          <span>8:00 am — 5:00 pm</span>
         </div>
+      </div>
+
+      <!-- Mapa -->
+      <div class="map-wrap fade-in" style="transition-delay:.4s">
+        <iframe
+          src="https://maps.google.com/maps?q=9.9278942,-84.0642934&hl=es&z=16&output=embed"
+          allowfullscreen
+          loading="lazy"
+          title="Ubicación UMC Costa Rica">
+        </iframe>
       </div>
 
     </div>
 
+    <!-- Columna derecha: formulario -->
     <div class="contact-form-wrap fade-in" style="transition-delay:.1s">
-      <p class="form-title">📅 Agenda una cita o escríbenos</p>
+      <p style="font-size:.82rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin-bottom:.5rem;"><i class="fa-solid fa-bolt" style="margin-right:.4rem;"></i> Te contactamos en menos de 24 horas</p>
+      <p class="form-title">Envíanos un mensaje</p>
 
       <form id="contact-form" novalidate>
 
@@ -116,6 +163,11 @@
             <label for="apellido">Apellido</label>
             <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
           </div>
+        </div>
+
+        <div class="form-group">
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" />
         </div>
 
         <div class="form-group">
@@ -132,9 +184,10 @@
           <label for="servicio">Servicio de interés</label>
           <select id="servicio" name="servicio" required>
             <option value="" disabled selected>Selecciona un servicio…</option>
-            <option>Soporte Técnico</option>
             <option>Outsourcing IT</option>
-            <option>Soluciones Modernas</option>
+            <option>Soporte Técnico</option>
+            <option>Soluciones Tecnológicas</option>
+            <option>Diagnóstico gratuito</option>
             <option>Otro / No estoy seguro</option>
           </select>
         </div>
@@ -142,7 +195,7 @@
         <div class="form-group">
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje" name="mensaje" rows="4"
-            placeholder="Cuéntanos brevemente sobre tu proyecto o consulta…" required></textarea>
+            placeholder="Cuéntanos sobre tu empresa y en qué te podemos ayudar…" required></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary form-submit">
@@ -155,49 +208,25 @@
   </div>
 </section>
 
-<section class="section" style="padding-top:0; padding-bottom:5rem;">
-  <div style="text-align:center; margin-bottom:2.5rem;">
-    <div class="section-label fade-in">Contacto rápido</div>
-    <h2 class="fade-in" style="transition-delay:.1s; margin-top:.5rem;">
-      Elige tu canal <span class="gradient-text">preferido</span>
-    </h2>
-  </div>
-  <div style="display:flex; justify-content:center; gap:1.5rem; flex-wrap:wrap;">
-    <a href="https://wa.me/50600000000?text=Hola%20UMC%20Costa%20Rica%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta."
-       target="_blank" class="btn btn-primary fade-in" style="gap:.6rem; padding:1rem 2.2rem;">
-      💬 Escribir por WhatsApp
-    </a>
-    <a href="mailto:info@umccostarica.com?subject=Consulta%20desde%20la%20web"
-       class="btn btn-outline fade-in" style="transition-delay:.1s; gap:.6rem; padding:1rem 2.2rem;">
-      📧 Enviar un correo
-    </a>
-  </div>
-</section>
-
+<!-- ===== Footer ===== -->
 <footer>
   <div class="glow-divider" style="margin-bottom:2rem"></div>
   <div class="footer-inner">
     <a href="index.html" class="nav-logo">
       <div class="nav-logo-icon">UMC</div>
-      <div>
-        <span>UMC</span>
-        <small>Costa Rica</small>
-      </div>
+      <div><span>UMC</span><small>Costa Rica</small></div>
     </a>
     <ul class="footer-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
-    <p class="footer-copy">
-      © 2025 <span>UMC Costa Rica</span>. Todos los derechos reservados.
-    </p>
+    <p class="footer-copy">© 2025 <span>UMC Costa Rica</span>. Todos los derechos reservados.</p>
   </div>
 </footer>
 
-<a href="https://wa.me/50600000000" target="_blank" class="wa-float" title="Escríbenos por WhatsApp" aria-label="WhatsApp">
-  💬
-</a>
+<a href="https://wa.me/50670277763?text=Hola%20UMC%2C%20necesito%20ayuda%20con%20mi%20empresa." target="_blank" class="wa-float" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
 <script src="js/modules/nav.js"></script>
 <script src="js/modules/particles.js"></script>
