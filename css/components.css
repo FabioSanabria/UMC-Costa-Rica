@@ -291,7 +291,7 @@
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 3rem;
-  align-items: start;
+  align-items: stretch;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -342,6 +342,27 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 2.5rem;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-wrap form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-wrap .form-group:has(textarea) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-wrap textarea {
+  flex: 1;
+  min-height: 120px;
 }
 
 .form-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.75rem; }
