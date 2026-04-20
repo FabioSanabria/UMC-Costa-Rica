@@ -38,9 +38,13 @@ body {
 
 /* ---------- Tipografía ---------- */
 h1, h2, h3 { font-weight: 700; line-height: 1.2; }
-h1 { font-size: clamp(1.9rem, 5vw, 4rem); }
-h2 { font-size: clamp(1.5rem, 3.5vw, 2.8rem); }
+h1 { font-size: clamp(1.9rem, 4.5vw, 4.5rem); }
+h2 { font-size: clamp(1.5rem, 3.2vw, 3.2rem); }
 h3 { font-size: 1.25rem; }
+
+@media (min-width: 1440px) {
+  h3 { font-size: 1.35rem; }
+}
 
 .gradient-text {
   background: var(--accent-grd);

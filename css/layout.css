@@ -250,3 +250,15 @@ footer {
 @media (max-width: 480px) {
   .section { padding: 4.5rem 4% 3rem; }
 }
+
+/* ---- Large desktops (≥1440px) ---- */
+@media (min-width: 1440px) {
+  .section     { padding: 8rem 5% 7rem; }
+  .section-sub { font-size: 1.1rem; max-width: 680px; }
+}
+
+/* ---- Extra large desktops (≥1920px) ---- */
+@media (min-width: 1920px) {
+  .section     { padding: 9rem 5% 8rem; }
+  .section-sub { font-size: 1.15rem; max-width: 780px; }
+}
