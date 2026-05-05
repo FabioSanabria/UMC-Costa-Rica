@@ -1137,6 +1137,13 @@
   .contact-form-wrap { padding: 1.5rem 1rem; }
 }
 
+/* ---- Center lone last card in 3-column services grid ---- */
+@media (min-width: 1024px) and (max-width: 1530px) {
+  .services-grid .service-card:last-child:nth-child(3n + 1) {
+    grid-column: 2;
+  }
+}
+
 /* ---- Large desktops (≥1440px) ---- */
 @media (min-width: 1440px) {
   .hero-inner,
